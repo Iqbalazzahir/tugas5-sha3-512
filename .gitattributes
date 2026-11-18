@@ -1,0 +1,12 @@
+# Normalisasi akhir baris secara umum
+* text=auto
+
+# Skrip bash harus selalu LF agar bisa jalan di Linux/WSL
+*.sh text eol=lf
+
+# Berkas contoh JANGAN diubah akhir barisnya, karena digest SHA3-512
+# bergantung pada byte persis (LF vs CRLF menghasilkan digest berbeda)
+samples/* -text
+
+# Screenshot adalah berkas biner
+*.png binary

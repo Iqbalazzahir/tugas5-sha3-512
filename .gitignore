@@ -1,0 +1,14 @@
+out/
+*.class
+
+# berkas sisa pengujian
+besar.bin
+abc.txt
+abd.txt
+
+# berkas editor / sistem
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
